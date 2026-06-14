@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Verification</title>
+    <meta name="description" content="Secure OTP phone number verification with multi-language support." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <div class="lang-switch" id="langSwitch">
+      <button data-lang-btn="en" id="btn-en">EN</button>
+      <button data-lang-btn="de" id="btn-de">DE</button>
+      <button data-lang-btn="ar" id="btn-ar">AR</button>
+    </div>
+
+    <div class="card" id="card">
+      <h1 id="title"></h1>
+      <p id="subtitle"></p>
+
+      <div class="boxes" id="boxes">
+        <input maxlength="1" inputmode="numeric" id="otp-0" autocomplete="one-time-code" />
+        <input maxlength="1" inputmode="numeric" id="otp-1" />
+        <input maxlength="1" inputmode="numeric" id="otp-2" />
+        <input maxlength="1" inputmode="numeric" id="otp-3" />
+      </div>
+
+      <button class="submit-btn" id="submitBtn"></button>
+      <button class="resend" id="resendBtn"></button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
